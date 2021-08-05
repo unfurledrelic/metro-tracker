@@ -31,7 +31,7 @@ function MapDot(props) {
         }
     }
 
-    return <div onMouseOver={mouseOver} onMouseOut={mouseOut} className={`${className} dot`} style={{zIndex: (showFront ? "100" : ""), position: 'fixed', marginLeft: (item.Lon - minLon) * 1500, marginTop: (maxLat - item.Lat) * 1500}}>
+    return <div onMouseOver={mouseOver} onMouseOut={mouseOut} className={`${className} dot`} style={{zIndex: (showFront ? "100" : ""), position: 'fixed', marginLeft: (item.Lon - minLon) * 1140, marginTop: (item.Lat - maxLat) * -1550}}>
         <Link onClick={selectionModeOnClick} to={`/lines/${item.LineCode1}/${item.Code}`}> </Link>
     </div>
 }

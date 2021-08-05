@@ -51,19 +51,8 @@ function Map(props) {
             }
         }
         //i actually want a square map. that way the scaling is easier. it'll look better, too
-        let lonDiff = maxLon - minLon;
-        let latDiff = maxLat - minLat;
-        if (lonDiff > latDiff) {
-            let difference = lonDiff - latDiff;
-            console.log(difference);
-            setMaxLat(maxLat + difference);
-            setMaxLon(maxLon);
-        } else {
-            let difference = latDiff - lonDiff;
-            console.log(difference);
-            setMaxLon(maxLon + difference);
-            setMaxLat(maxLat);
-        }
+        setMaxLat(maxLat);
+        setMaxLon(maxLon);
         setMinLon(minLon);
         setMinLat(minLat);
 
@@ -89,8 +78,8 @@ function Map(props) {
             <React.Fragment>
                 <div className="title"> Washington, DC Metro Map: select a station to get details! </div>
                 <div className="map" style={
-                {width: (maxLon - minLon) * 1500 + 25, 
-                height: (maxLat - minLat) * 1500 + 25, 
+                {width: (maxLon - minLon) * 1140 + 25, 
+                height: (maxLat - minLat) * 1550 + 25, 
                 }}>
                     {stationStatus.Stations.map((item, index) => {
                         return <MapDot setStation={setHoveredStation} selectionMode={routeSelection} addToSelection={addToSelection} item={item} minLon={minLon} maxLat={maxLat}/>
