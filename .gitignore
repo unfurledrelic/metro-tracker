@@ -11,6 +11,9 @@
 # production
 /build
 
+# ignore key.json
+src/key.json
+
 # misc
 .DS_Store
 .env.local
