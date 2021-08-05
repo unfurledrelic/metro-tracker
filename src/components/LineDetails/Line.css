@@ -1,0 +1,103 @@
+.SV {
+background-color: gray;
+color: white;
+}
+
+.OR {
+background-color: rgb(253, 100, 44);
+color: white;
+}
+
+.RD {
+background-color: red;
+color: white;
+}
+
+.GR {
+background-color: green;
+color: white;
+}
+
+.BL {
+background-color: blue;
+color: white;
+}
+
+.YL {
+background-color: yellow;
+color: black;
+}
+
+.metroLine {
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.shrink {
+    display: inline-block;
+    width: 15%;
+    overflow-y: auto;
+}
+
+.stationList {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: left;
+    background-color: gray;
+    border-radius: 20px;
+    padding: 10px;
+    min-width: 80%;
+    max-width: 80%;
+}
+
+.shrink .stationList {
+    margin: 15px;
+    display: inline-block;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.stationList a {
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 5px;
+}
+
+.shrink .stationList a {
+    display: block;
+}
+
+.stationDetails {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.stationDetails .lines div {
+    display: inline-block;
+    border: 1px solid black;
+    margin-right: 3px;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes slide {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 15%;
+    }
+}

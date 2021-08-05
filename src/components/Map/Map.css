@@ -1,0 +1,56 @@
+.dot {
+    border-radius: 50px;
+    border: 1px solid white;
+    height: 21px;
+    width: 21px;
+}
+
+.dot a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.YL.BL {
+    background: linear-gradient(to bottom right, yellow 50%, blue 50%);
+}
+
+.OR.BL {
+    background: linear-gradient(to bottom right, rgb(253, 100, 44) 50%, blue 50%);
+}
+
+.GR.YL {
+    background: linear-gradient(to bottom right, green 50%, yellow 50%);
+}
+
+.BL.SV {
+    background: linear-gradient(to bottom right, blue 50%, gray 50%);
+}
+
+.OR.SV {
+    background: linear-gradient(to bottom right, rgb(253, 100, 44) 50%, gray 50%);
+}
+
+.BL.OR.SV {
+    background: linear-gradient(to bottom right, blue 40%, rgb(253, 100, 44) 40% 60%, gray 60%);
+}
+
+.map {
+    background-color: "lightgray";
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: 3px solid black;
+    background-image: url("map.PNG");
+}
+
+.mapDetails {
+    padding: 10px;
+    font-size: 16pt;
+}
+
+.mapDetails button {
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 14pt;
+}

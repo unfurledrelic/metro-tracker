@@ -1,0 +1,39 @@
+.Header {
+    background-color: rgb(83, 111, 163);
+    color: white;
+    text-align: right;
+}
+
+.Header span {
+    float: left;
+    font-size: 15pt;
+    padding-left: 5px;
+}
+
+.Header a {
+    display: inline-block;
+    height: 30px;
+    min-width: 50px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    border: 0px solid white;
+    border-left: 2px solid white;
+    font-size: 14pt;
+    background-color: transparent;
+    color: white;
+}
+
+.Header a:hover {
+    background-color: white;
+    color: black;
+}
+
+.Header a.selected {
+    background-color: white;
+    color: black;
+}
+
+.Header a:last-child {
+    border-right: 2px solid white;
+}

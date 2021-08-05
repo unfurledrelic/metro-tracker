@@ -1,0 +1,14 @@
+
+.App {
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
+  font-size: 20pt;
+  padding: 5px;
+  font-weight: bold;
+}
